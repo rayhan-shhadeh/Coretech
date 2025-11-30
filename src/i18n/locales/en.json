@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "solutions": "Solutions",
+    "products": "Products",
+    "partners": "Partners",
+    "resources": "Resources",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Connecting the World, Empowering Potential",
+    "subtitle": "End-to-end telecommunications and ICT solutions that revolutionize connectivity and empower human potential through innovation.",
+    "cta_primary": "Get Started",
+    "cta_secondary": "Explore Solutions"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive telecommunications and ICT solutions tailored to your needs",
+    "telecommunications": "Telecommunications Solutions",
+    "ict": "ICT Services",
+    "cybersecurity": "Cybersecurity",
+    "4g5g": "4G/5G Implementation",
+    "ftth": "Fiber to the Home",
+    "distribution": "Distribution Services"
+  },
+  "stats": {
+    "years": "Years in Business",
+    "clients": "Satisfied Clients",
+    "projects": "Completed Projects",
+    "uptime": "Service Uptime"
+  },
+  "about": {
+    "title": "About Coretech",
+    "mission": "Mission",
+    "vision": "Vision",
+    "values": "Our Values",
+    "team": "Our Team"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Let's discuss how we can help transform your connectivity",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Message",
+    "submit": "Send Message",
+    "info": {
+      "address": "Nablus, West Bank, Palestine",
+      "phone": "0097-9236-8180",
+      "email": "info@coretechpal.com"
+    }
+  },
+  "footer": {
+    "tagline": "Revolutionizing telecommunications and IT through innovative solutions",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contact": "Contact Us",
+    "followUs": "Follow Us",
+    "copyright": "© 2023 Coretech. All rights reserved."
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "requestQuote": "Request Quote",
+    "downloadBrochure": "Download Brochure",
+    "contactExperts": "Contact Our Experts"
+  }
+}

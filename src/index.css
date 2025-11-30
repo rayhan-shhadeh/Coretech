@@ -1,0 +1,252 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Tailwind Base */
+@import "tailwindcss";
+
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Inter', 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Exo 2', 'Rajdhani', sans-serif;
+  font-weight: 700;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+[dir="ltr"] {
+  direction: ltr;
+}
+
+/* Glass Morphism Effect */
+.glass {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(to right, #0A2463, #00D4FF, #00C853);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Button Styles */
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #0A2463 0%, #00D4FF 100%);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.5);
+}
+
+.btn-primary:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #00D4FF;
+  ring-offset: 2px;
+}
+
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #00D4FF;
+  color: #00D4FF;
+  font-weight: 600;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #00D4FF;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.5);
+}
+
+.btn-ghost {
+  padding: 0.75rem 1.5rem;
+  color: #0A2463;
+  font-weight: 600;
+  position: relative;
+}
+
+.btn-ghost::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #00D4FF;
+  transition: all 0.3s;
+}
+
+.btn-ghost:hover::after {
+  width: 100%;
+}
+
+/* Card Styles */
+.card {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.card-featured {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.card-featured:hover {
+  border-color: #00D4FF;
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+/* Input Styles */
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #d1d5db;
+  background: white;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.input-field:focus {
+  border-color: #00D4FF;
+  ring: 2px;
+  ring-color: rgba(0, 212, 255, 0.2);
+}
+
+/* Section Container */
+.section-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-container {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container {
+    padding: 6rem 2rem;
+  }
+}
+
+/* Animated Background */
+.animated-bg {
+  background: linear-gradient(-45deg, #0A2463, #1A1A2E, #00D4FF, #00C853);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Network Animation */
+.network-dot {
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: #00D4FF;
+  opacity: 0.6;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Scrollbar Styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #E8E8E8;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #00D4FF;
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #0A2463;
+}
+
+/* Smooth Scrolling */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark Mode Styles */
+.dark body {
+  background: #1A1A2E;
+  color: white;
+}
+
+.dark .card,
+.dark .card-featured {
+  background: #1A1A2E;
+}
+
+.dark .input-field {
+  background: #1A1A2E;
+  border-color: #4b5563;
+  color: white;
+}
+
+.dark .btn-ghost {
+  color: #00D4FF;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-track {
+  background: #1A1A2E;
+}
