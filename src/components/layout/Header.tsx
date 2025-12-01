@@ -47,9 +47,9 @@ export const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'glass-strong shadow-glow-cyan'
+          ? 'bg-white/95 dark:bg-dark-charcoal/95 backdrop-blur-lg shadow-lg'
           : 'bg-transparent'
       }`}
     >
@@ -57,10 +57,10 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center glow-cyan group-hover:shadow-glow-cyan-lg transition-all duration-300">
+            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:shadow-glow-cyan transition-all duration-300">
               <span className="text-white font-heading font-bold text-xl">C</span>
             </div>
-            <span className="text-2xl font-heading font-bold gradient-text-holographic">
+            <span className="text-2xl font-heading font-bold text-gray-900 dark:text-white">
               Coretech
             </span>
           </Link>
@@ -76,9 +76,9 @@ export const Header: React.FC = () => {
               >
                 {item.children ? (
                   <>
-                    <button className="flex items-center space-x-1 text-gray-700 dark:text-gray-300 hover:text-electric-cyan transition-all duration-300 font-medium group">
+                    <button className="flex items-center space-x-1 text-gray-700 dark:text-gray-300 hover:text-electric-cyan transition-colors font-medium">
                       <span>{item.label}</span>
-                      <ChevronDown className="w-4 h-4 group-hover:animate-bounce" />
+                      <ChevronDown className="w-4 h-4" />
                     </button>
                     <AnimatePresence>
                       {activeDropdown === item.path && (
