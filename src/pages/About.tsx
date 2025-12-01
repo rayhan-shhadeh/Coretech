@@ -150,10 +150,10 @@ export const About: React.FC = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Card className="text-center h-full">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 hover:shadow-glow-cyan transition-shadow">
                     <Icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-heading font-semibold mb-3">
+                  <h3 className="text-2xl font-heading font-semibold mb-3 text-gray-900 dark:text-white">
                     {value.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">

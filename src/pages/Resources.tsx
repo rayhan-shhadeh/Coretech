@@ -103,12 +103,12 @@ export const Resources: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full group cursor-pointer">
+              <Card className="h-full group cursor-pointer hover:shadow-colored-cyan">
                 <div className="h-48 bg-gradient-to-br from-deep-blue to-electric-cyan rounded-lg mb-4" />
                 <span className="text-sm text-electric-cyan font-medium">
                   {post.category}
                 </span>
-                <h3 className="text-xl font-heading font-semibold mb-2 mt-2 group-hover:text-electric-cyan transition-colors">
+                <h3 className="text-xl font-heading font-semibold mb-2 mt-2 text-gray-900 dark:text-white group-hover:text-electric-cyan transition-colors">
                   {post.title}
                 </h3>
                 <div className="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-3">
@@ -141,11 +141,11 @@ export const Resources: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card featured className="h-full">
+              <Card featured className="h-full hover:shadow-colored-cyan">
                 <span className="text-sm text-electric-cyan font-medium">
                   {study.industry}
                 </span>
-                <h3 className="text-2xl font-heading font-semibold my-3">
+                <h3 className="text-2xl font-heading font-semibold my-3 text-gray-900 dark:text-white">
                   {study.title}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -177,7 +177,7 @@ export const Resources: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="hover:shadow-xl transition-shadow">
+              <Card className="hover:shadow-colored-cyan transition-shadow">
                 <h3 className="text-xl font-heading font-semibold mb-3 text-electric-cyan">
                   {faq.question}
                 </h3>

@@ -101,11 +101,11 @@ export const Contact: React.FC = () => {
                   >
                     <Card className="mb-4">
                       <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0 hover:shadow-glow-cyan transition-shadow">
                           <Icon className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-lg mb-1">
+                          <h3 className="font-semibold text-lg mb-1 text-gray-900 dark:text-white">
                             {info.title}
                           </h3>
                           <p className="text-gray-600 dark:text-gray-400">

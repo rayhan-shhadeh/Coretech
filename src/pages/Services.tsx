@@ -248,11 +248,11 @@ export const Services: React.FC = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link to={`/services/${key}`}>
-                  <Card featured className="h-full group cursor-pointer">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Card featured className="h-full group cursor-pointer hover:shadow-colored-cyan">
+                    <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-glow-cyan transition-all">
                       <Icon className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-2xl font-heading font-semibold mb-3">
+                    <h3 className="text-2xl font-heading font-semibold mb-3 text-gray-900 dark:text-white">
                       {service.title}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-400 mb-4">

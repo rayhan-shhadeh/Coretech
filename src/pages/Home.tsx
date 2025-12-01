@@ -202,10 +202,10 @@ export const Home: React.FC = () => {
               >
                 <Link to={service.path}>
                   <Card featured className="h-full group cursor-pointer hover:shadow-colored-cyan">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform glow-cyan">
+                    <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform group-hover:shadow-glow-cyan">
                       <Icon className="w-8 h-8 text-white icon-glow" />
                     </div>
-                    <h3 className="text-2xl font-heading font-semibold mb-3">
+                    <h3 className="text-2xl font-heading font-semibold mb-3 text-gray-900 dark:text-white">
                       {service.title}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-400">
@@ -226,9 +226,9 @@ export const Home: React.FC = () => {
       {/* Stats Section */}
       <section
         ref={statsRef}
-        className="section-container bg-gradient-holographic text-white relative overflow-hidden"
+        className="section-container bg-gradient-to-r from-deep-blue to-electric-cyan dark:bg-gradient-holographic text-white relative overflow-hidden"
       >
-        <div className="absolute inset-0 bg-gradient-mesh opacity-50" />
+        <div className="absolute inset-0 bg-gradient-mesh opacity-30 dark:opacity-50" />
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
@@ -241,9 +241,9 @@ export const Home: React.FC = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <Icon className="w-12 h-12 mx-auto mb-4 opacity-90 icon-glow" />
+                <Icon className="w-12 h-12 mx-auto mb-4 text-white opacity-90 icon-glow" />
                 <Counter end={parseFloat(stat.value)} suffix={stat.suffix} />
-                <p className="text-lg mt-2 opacity-90">{stat.label}</p>
+                <p className="text-lg mt-2 text-white opacity-90">{stat.label}</p>
               </motion.div>
             );
           })}

@@ -111,15 +111,15 @@ export const Products: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full group cursor-pointer">
+              <Card className="h-full group cursor-pointer hover:shadow-colored-cyan">
                 <div className="h-48 bg-gradient-to-br from-soft-gray to-gray-200 dark:from-gray-800 dark:to-gray-700 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-gray-400">Product Image</span>
+                  <span className="text-gray-500 dark:text-gray-400">Product Image</span>
                 </div>
                 <div className="space-y-2">
                   <span className="text-sm text-electric-cyan font-medium">
                     {product.category}
                   </span>
-                  <h3 className="text-xl font-heading font-semibold group-hover:text-electric-cyan transition-colors">
+                  <h3 className="text-xl font-heading font-semibold text-gray-900 dark:text-white group-hover:text-electric-cyan transition-colors">
                     {product.name}
                   </h3>
                   <p className="text-lg font-bold text-gray-700 dark:text-gray-300">
