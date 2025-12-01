@@ -104,7 +104,7 @@ export const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-deep-blue via-dark-charcoal to-deep-blue">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-deep-blue via-dark-charcoal to-deep-blue bg-gradient-mesh">
         <NetworkBackground />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
@@ -114,10 +114,11 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <motion.h1
-              className="text-5xl md:text-7xl font-heading font-bold text-white mb-6"
+              className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-white mb-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
+              style={{ textShadow: '0 0 40px rgba(0, 212, 255, 0.3)' }}
             >
               {t('hero.tagline')}
             </motion.h1>
@@ -149,16 +150,24 @@ export const Home: React.FC = () => {
             </motion.div>
           </motion.div>
 
-          {/* Floating Elements */}
+          {/* Floating Elements with Glow */}
           <motion.div
-            className="absolute top-20 left-10 w-20 h-20 border-2 border-electric-cyan rounded-lg opacity-20"
+            className="absolute top-20 left-10 w-20 h-20 border-2 border-electric-cyan rounded-lg opacity-20 glow-cyan"
             animate={{ y: [0, -20, 0], rotate: [0, 180, 360] }}
             transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
           />
           <motion.div
-            className="absolute bottom-20 right-10 w-16 h-16 border-2 border-vibrant-orange rounded-full opacity-20"
+            className="absolute bottom-20 right-10 w-16 h-16 border-2 border-vibrant-orange rounded-full opacity-20 glow-orange"
             animate={{ y: [0, 20, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+          />
+          <motion.div
+            className="absolute top-1/2 right-20 w-12 h-12 bg-success-green rounded-lg opacity-10 glow-green"
+            animate={{
+              rotate: [0, 360],
+              scale: [1, 1.2, 1]
+            }}
+            transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
           />
         </div>
       </section>
@@ -192,9 +201,9 @@ export const Home: React.FC = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link to={service.path}>
-                  <Card featured className="h-full group cursor-pointer">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                      <Icon className="w-8 h-8 text-white" />
+                  <Card featured className="h-full group cursor-pointer hover:shadow-colored-cyan">
+                    <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform glow-cyan">
+                      <Icon className="w-8 h-8 text-white icon-glow" />
                     </div>
                     <h3 className="text-2xl font-heading font-semibold mb-3">
                       {service.title}
@@ -217,9 +226,10 @@ export const Home: React.FC = () => {
       {/* Stats Section */}
       <section
         ref={statsRef}
-        className="section-container bg-gradient-to-r from-deep-blue to-electric-cyan text-white"
+        className="section-container bg-gradient-holographic text-white relative overflow-hidden"
       >
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="absolute inset-0 bg-gradient-mesh opacity-50" />
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
@@ -231,7 +241,7 @@ export const Home: React.FC = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <Icon className="w-12 h-12 mx-auto mb-4 opacity-80" />
+                <Icon className="w-12 h-12 mx-auto mb-4 opacity-90 icon-glow" />
                 <Counter end={parseFloat(stat.value)} suffix={stat.suffix} />
                 <p className="text-lg mt-2 opacity-90">{stat.label}</p>
               </motion.div>
@@ -242,7 +252,7 @@ export const Home: React.FC = () => {
 
       {/* CTA Section */}
       <section className="section-container bg-white dark:bg-dark-charcoal">
-        <Card glass className="text-center max-w-4xl mx-auto">
+        <Card glass className="text-center max-w-4xl mx-auto glass-strong">
           <h2 className="text-4xl font-heading font-bold mb-6">
             Ready to Transform Your Connectivity?
           </h2>
