@@ -91,7 +91,7 @@ export const Resources: React.FC = () => {
       <section className="section-container bg-white dark:bg-dark-charcoal">
         <div className="flex items-center mb-8">
           <FileText className="w-8 h-8 text-electric-cyan mr-3" />
-          <h2 className="text-4xl font-heading font-bold">Latest News & Insights</h2>
+          <h2 className="text-4xl font-heading font-bold text-gray-900 dark:text-white">Latest News & Insights</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -129,7 +129,7 @@ export const Resources: React.FC = () => {
       <section className="section-container bg-soft-gray dark:bg-gray-900">
         <div className="flex items-center mb-8">
           <BookOpen className="w-8 h-8 text-electric-cyan mr-3" />
-          <h2 className="text-4xl font-heading font-bold">Case Studies</h2>
+          <h2 className="text-4xl font-heading font-bold text-gray-900 dark:text-white">Case Studies</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -165,7 +165,7 @@ export const Resources: React.FC = () => {
       <section className="section-container bg-white dark:bg-dark-charcoal">
         <div className="flex items-center mb-8">
           <HelpCircle className="w-8 h-8 text-electric-cyan mr-3" />
-          <h2 className="text-4xl font-heading font-bold">Frequently Asked Questions</h2>
+          <h2 className="text-4xl font-heading font-bold text-gray-900 dark:text-white">Frequently Asked Questions</h2>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-4">

@@ -63,7 +63,7 @@ export const Partners: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-heading font-bold mb-4">
+          <h2 className="text-4xl font-heading font-bold mb-4 text-gray-900 dark:text-white">
             Why Our Partnerships Matter
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400">
@@ -108,7 +108,7 @@ export const Partners: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-heading font-bold mb-4">
+          <h2 className="text-4xl font-heading font-bold mb-4 text-gray-900 dark:text-white">
             Technology Partners
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400">
@@ -139,7 +139,7 @@ export const Partners: React.FC = () => {
       {/* Become a Partner CTA */}
       <section className="section-container bg-white dark:bg-dark-charcoal">
         <Card glass className="text-center max-w-4xl mx-auto">
-          <h2 className="text-4xl font-heading font-bold mb-6">
+          <h2 className="text-4xl font-heading font-bold mb-6 text-gray-900 dark:text-white">
             Become a Partner
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
